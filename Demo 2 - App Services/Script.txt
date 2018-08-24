@@ -1,0 +1,22 @@
+copy sample code into environment.tf file in vs code
+
+talk through it
+
+terraform workspace select dev01
+terraform plan -var-file=config.dev01.tfvars
+terraform apply -var-file=config.dev01.tfvars -auto-approve
+
+look at created resources in azure
+
+browse to created app services
+
+add deploy credentials
+
+update both east and west with demo source code using filezilla
+
+do east server first
+
+look at both websites to see the changes
+
+talk about other deployment options, VSTS, CI + Pipelines
+

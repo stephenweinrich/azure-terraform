@@ -1,0 +1,18 @@
+Paste environment.tf into vs code
+
+talk through script and execute
+
+terraform plan -var-file=config.dev01.tfvars
+terraform apply -var-file=config.dev01.tfvars -auto-approve
+
+use nslookup to confirm round robin
+
+browse to tm dns to see round robin website
+
+chrome://net-internals/#dns
+
+clear cache and browse again
+
+change ttl = 1
+
+discuss TTL problems

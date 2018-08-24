@@ -1,0 +1,37 @@
+copy environment1.tf file into vs code and talk through it
+
+terraform plan -var-file=config.dev01.tfvars
+terraform apply -var-file=config.dev01.tfvars -auto-approve
+
+show public ip address that has not been assign a dns or ip yet
+
+copy environment2.tf file into vs code and execute terraform
+
+terraform plan -var-file=config.dev01.tfvars
+terraform apply -var-file=config.dev01.tfvars -auto-approve
+
+talk through script while terraform is generating the gateways
+
+go look at azure portal even if its still updating, talk through
+
+switch to dev02 if its taking too long
+
+go back to PIP to show newly assigned ip address
+
+go to Backend Health to show probe results
+
+try browse to gateway DNS, should fail
+
+open resource manager: https://resources.azure.com/
+
+show where to set pickHostNameFromBackendAddress = true
+
+browse to gateway DNS should succeed
+
+browse to PIP address should succeed
+
+Add IP Restriction to app service
+
+Show direct access does not work
+
+Show access via gateway works

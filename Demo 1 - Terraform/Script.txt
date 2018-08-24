@@ -1,0 +1,28 @@
+mkdir /c/code/contoso.com
+mkdir /c/code/contoso.com/infrastructure
+cd /c/code/contoso.com/infrastructure
+
+copy environment.tf and config.dev01.tfvars file into folder
+
+open in vscode
+look at and explain 2 files
+
+create azure principal account
+give it access to subscription
+copy paste azure required values
+
+terraform init
+terraform workspace new dev01
+terraform plan -var-file=config.dev01.tfvars
+
+terraform apply -var-file=config.dev01.tfvars
+
+look at state file, talk about a central state file
+
+review resource groups created in azure portal
+
+terraform destroy -var-file=config.dev01.tfvars
+
+terraform apply -var-file=config.dev01.tfvars -auto-approve
+
+talk about vsts build/release pipelines
